@@ -1,0 +1,8 @@
+body {
+  background-color: aqua;
+}
+
+.big_title {
+  font-size: 4em;
+  text-align: center;
+}
