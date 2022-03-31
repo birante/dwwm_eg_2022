@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,84 @@
   <title>Integration Image 01</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <h1 class="big_title">Formulaire DWWM</h1>
   <div class="form">
-    
+    <div class="mb-30">
+      <label for="name">Nom </label>
+      <input type="text" name="name" placeholder="Entrez votre nom">
+    </div>
+
+    <div class="mb-30">
+      <label for="email">Email </label>
+      <input type="text" name="email" placeholder="Entrez votre email">
+    </div>
+
+    <div class="mb-30">
+      <label for="satisafaction">Indiquer votre satisfaction (entre 1 et 10) </label>
+      <input type="number" name="satisafaction" min="1" max="10">
+    </div>
+
+    <div class="mb-30">
+      <label for="coach">Qui est votre coach? </label>
+      <select name="coach" id="coach">
+        <option value="birante">Birante</option>
+        <option value="malick">Malick</option>
+        <option value="mamadou">Mamadou</option>
+      </select>
+    </div>
+
+    <div class="mb-30">
+      <label>A quelle moment avez-vous cours? </label>
+      <div>
+        <input type="radio" name="course_time">
+        <label for="morning">Matin</label>
+      </div>
+      <div>
+        <input type="radio" name="course_time">
+        <label for="afternoon">Après Midi</label>
+      </div>
+      <div>
+        <input type="radio" name="course_time">
+        <label for="night">Soir</label>
+      </div>
+    </div>
+
+    <div class="mb-30">
+      <label>Quels outils? </label>
+      <div>
+        <input type="checkbox" name="html">
+        <label for="html">HTML</label>
+      </div>
+      <div>
+        <input type="checkbox" name="css">
+        <label for="css">CSS</label>
+      </div>
+      <div>
+        <input type="checkbox" name="javascript">
+        <label for="javascript">Javascript</label>
+      </div>
+      <div>
+        <input type="checkbox" name="code_editor">
+        <label for="code_editor">Editeur de Texte </label>
+      </div>
+      <div>
+        <input type="checkbox" name="command_line">
+        <label for="command_line">Ligne de commande </label>
+      </div>
+    </div>
+
+    <div class="mb-30">
+      <label for="experience">Decrivez votre experience</label>
+      <textarea name="experience" id="experience" cols="20" rows="4">Decrivez votre experience ici...
+      </textarea>
+    </div>
+
+    <div class="mb-30">
+      <button type="submit">Envoyer</button>
+    </div>
   </div>
 </body>
+
 </html>
