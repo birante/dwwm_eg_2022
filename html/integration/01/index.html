@@ -12,24 +12,23 @@
 <body>
   <h1 class="big_title">Formulaire DWWM</h1>
   <div class="form">
-    <div class="form_box">
-      <div class="mb-30">
-      <label for="name">Nom </label>
-      <input type="text" name="name" placeholder="Entrez votre nom">
+    <div class="mb-30">
+      <label class="name-px" for="name">Nom </label>
+      <input  id="name" type="text" name="name" placeholder="Entrez votre nom">
     </div>
 
     <div class="mb-30">
-      <label for="email">Email </label>
-      <input type="text" name="email" placeholder="Entrez votre email">
+      <label class="email-px" for="email">Email </label>
+      <input id="email" type="text" name="email" placeholder="Entrez votre email">
     </div>
 
     <div class="mb-30">
-      <label for="satisafaction">Indiquer votre satisfaction (entre 1 et 10) </label>
-      <input type="number" name="satisafaction" min="1" max="10">
+      <label class="left" for="satisafaction">Indiquer votre satisfaction <br> <span> (entre 1 et 10) </span> </label>
+      <input id="satisfaction" type="number" name="satisafaction" placeholder="numéro de 1 à 10" min="1" max="10">
     </div>
 
     <div class="mb-30">
-      <label for="coach">Qui est votre coach? </label>
+      <label class="left01" for="coach">Qui est votre coach? </label>
       <select name="coach" id="coach">
         <option value="birante">Birante</option>
         <option value="malick">Malick</option>
@@ -38,47 +37,51 @@
     </div>
 
     <div class="mb-30">
-      <label>A quelle moment avez-vous cours? </label>
-      <div>
-        <input type="radio" name="course_time">
-        <label for="morning">Matin</label>
-      </div>
-      <div>
-        <input type="radio" name="course_time">
-        <label for="afternoon">Après Midi</label>
-      </div>
-      <div>
-        <input type="radio" name="course_time">
-        <label for="night">Soir</label>
-      </div>
-    </div>
-
-    <div class="mb-30">
-      <label>Quels outils? </label>
-      <div>
-        <input type="checkbox" name="html">
-        <label for="html">HTML</label>
-      </div>
-      <div>
-        <input type="checkbox" name="css">
-        <label for="css">CSS</label>
-      </div>
-      <div>
-        <input type="checkbox" name="javascript">
-        <label for="javascript">Javascript</label>
-      </div>
-      <div>
-        <input type="checkbox" name="code_editor">
-        <label for="code_editor">Editeur de Texte </label>
-      </div>
-      <div>
-        <input type="checkbox" name="command_line">
-        <label for="command_line">Ligne de commande </label>
+      <label class="left">A quelle moment avez-vous <br> <span class="span01"> cours? </span> </label>
+      <div class="position">
+        <div>
+          <input type="radio" name="course_time">
+          <label for="morning">Matin</label>
+        </div>
+        <div>
+          <input type="radio" name="course_time">
+          <label for="afternoon">Après Midi</label>
+        </div>
+        <div>
+          <input type="radio" name="course_time">
+          <label for="night">Soir</label>
+        </div>
       </div>
     </div>
 
     <div class="mb-30">
-      <label for="experience">Decrivez votre experience</label>
+      <label class="outils-px">Quels outils? </label>
+      <div class="outils">
+        <div>
+          <input type="checkbox" name="html">
+          <label for="html">HTML</label>
+        </div>
+        <div>
+          <input type="checkbox" name="css">
+          <label for="css">CSS</label>
+        </div>
+        <div>
+          <input type="checkbox" name="javascript">
+          <label for="javascript">Javascript</label>
+        </div>
+        <div>
+          <input type="checkbox" name="code_editor">
+          <label for="code_editor">Editeur de Texte </label>
+        </div>
+        <div>
+          <input type="checkbox" name="command_line">
+          <label for="command_line">Ligne de commande </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-30">
+      <label class="left" for="experience">Decrivez votre experience</label>
       <textarea name="experience" id="experience" cols="20" rows="4">Decrivez votre experience ici...
       </textarea>
     </div>
