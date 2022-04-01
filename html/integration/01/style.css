@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 body {
   font-family: 'Exo 2', sans-serif;
-  background-color: #EEEFF6;
+  background-color: #40c9ef;
 }
 
 .big_title {
@@ -9,16 +9,36 @@ body {
 }
 
 .form {
-  width: 600px;
-  height: 580px;
+  width: 450px;
+  height: 570px;
   background-color: #FFFFFF;
   margin: 0 auto;
   padding: 20px;
+  border-radius: 2%;
+  
 }
 
-.mb-30 {
-  margin-bottom: 30px;
+
+label {
+  display: block;
+  float: left;
+  width: 190px;
+  margin-right: 15px;
+  margin-bottom: 1em;
+  margin-left: 20px; 
+  text-align: right; 
 }
+  
+.mb-30 {
+  margin: 20px;
+  
+}
+
+#box {
+  margin-bottom: 4em;
+}
+
+
 
 .btn_base {
   background-color: #000000;
@@ -28,3 +48,6 @@ body {
   border-radius: 2px;
 }
 
+.bt {
+  text-align: center;
+}
